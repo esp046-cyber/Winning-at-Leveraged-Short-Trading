@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Winning Trading Guide</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #2d3748;
+            line-height: 1.6;
+            padding: 1%;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+            border-radius: 12px 12px 0 0;
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 8px; }
+        .subtitle { font-size: 0.9rem; opacity: 0.95; }
+        .warning-banner {
+            background: #fed7d7;
+            border-left: 5px solid #e53e3e;
+            padding: 18px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        .warning-banner h2 {
+            color: #c53030;
+            font-size: 1.15rem;
+            margin-bottom: 12px;
+        }
+        .warning-banner ul { margin-left: 25px; color: #742a2a; }
+        .warning-banner li { margin: 8px 0; font-size: 0.95rem; }
+        .content { padding: 20px; }
+        .section-divider {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px;
+            margin: 25px 0 20px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        .step-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+        }
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #edf2f7;
+        }
+        .step-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+        .step-title { font-size: 1.2rem; font-weight: 600; color: #2d3748; flex: 1; }
+        .step-emoji { font-size: 1.5rem; }
+        .step-content { color: #4a5568; font-size: 0.95rem; }
+        .step-content p { margin-bottom: 12px; line-height: 1.7; }
+        .step-content ul, .step-content ol { margin-left: 25px; margin-bottom: 12px; }
+        .step-content li { margin: 7px 0; }
+        .strategy-box {
+            background: linear-gradient(135deg, #fff5e1 0%, #ffe8cc 100%);
+            border: 2px solid #f39c12;
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+        .strategy-box h4 {
+            color: #e67e22;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        .highlight-box {
+            background: #e6f7ff;
+            border-left: 4px solid #1890ff;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 6px;
+        }
+        .tip-box {
+            background: #f0fff4;
+            border-left: 4px solid #48bb78;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 6px;
+        }
+        .risk-note {
+            background: #fff5f5;
+            border-left: 4px solid #fc8181;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 6px;
+        }
+        .example-box {
+            background: #f0f9ff;
+            border-left: 4px solid #3b82f6;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 6px;
+        }
+        .formula {
+            background: #1e293b;
+            color: #a78bfa;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 12px 0;
+            overflow-x: auto;
+            font-size: 0.9rem;
+        }
+        .checklist {
+            background: #fafafa;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 6px;
+        }
+        .checklist-item {
+            padding: 8px 0;
+            border-bottom: 1px dashed #ddd;
+        }
+        .checklist-item:last-child { border-bottom: none; }
+        .checklist-item::before {
+            content: "☐ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 8px;
+            font-size: 1.1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+        table th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        table tr:hover { background: #f7fafc; }
+        strong { color: #2d3748; font-weight: 600; }
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            border-radius: 0 0 12px 12px;
+        }
+        footer p { margin: 8px 0; }
+        .footer-warning { font-weight: 700; color: #fbd38d; font-size: 1.05rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Complete Guide to Winning at Leveraged Short Trading</h1>
+            <p class="subtitle">ETHUSDT Binance Futures - All Strategies, Risk Management & Psychology</p>
+        </header>
+        
+        <div class="warning-banner">
+            <h2>⚠️ CRITICAL WARNING - READ FIRST ⚠️</h2>
+            <ul>
+                <li><strong>EXTREMELY HIGH RISK</strong> - You can lose 100% of your investment or more</li>
+                <li><strong>EDUCATIONAL PURPOSES ONLY</strong> - This is NOT financial advice</li>
+                <li><strong>70-80% of retail futures traders LOSE MONEY</strong></li>
+                <li><strong>Check local regulations</strong> (Philippines: BSP/SEC compliance required)</li>
+                <li><strong>MANDATORY: 3-6 months paper trading before using real money</strong></li>
+                <li><strong>Never trade with money you can't afford to lose completely</strong></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            
+            <div class="section-divider">📚 TRADING SUCCESS BLUEPRINT</div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Foundation: What You MUST Know</h3>
+                    <span class="step-emoji">📘</span>
+                </div>
+                <div class="step-content">
+                    <div class="strategy-box">
+                        <h4>🎯 The 3 Pillars of Profitable Trading</h4>
+                        <p><strong>1. STRATEGY</strong> - Proven entry/exit system (40%)</p>
+                        <p><strong>2. RISK MANAGEMENT</strong> - Position sizing, stops, limits (40%)</p>
+                        <p><strong>3. PSYCHOLOGY</strong> - Discipline, emotions, patience (20%)</p>
+                        <p>Most beginners focus 90% on strategy and ignore the other two. This is why they fail.</p>
+                    </div>
+                    
+                    <p><strong>What is Short Trading?</strong></p>
+                    <p>Betting price will FALL. Profit when price drops, lose when it rises.</p>
+                    
+                    <div class="formula">
+Example: Short ETH at $2,000
+Price drops to $1,900 = $100 profit per ETH
+Price rises to $2,100 = $100 loss per ETH
+
+With 5x leverage:
+$100 move = $500 profit/loss on $100 capital
+                    </div>
+                    
+                    <div class="risk-note">
+                        <strong>⚠️ Leverage Reality Check:</strong><br>
+                        • 5x leverage: Need 20% adverse move for liquidation<br>
+                        • 10x leverage: Need 10% adverse move<br>
+                        • 20x leverage: Need 5% adverse move<br>
+                        • 50x leverage: Need 2% adverse move (liquidation almost certain)<br><br>
+                        <strong>Beginners should use 2x-5x MAXIMUM.</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-divider">🎯 WINNING STRATEGIES</div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Strategy #1: Resistance Rejection</h3>
+                    <span class="step-emoji">🔴</span>
+                </div>
+                <div class="step-content">
+                    <div class="strategy-box">
+                        <h4>🎯 Complete Setup Rules</h4>
+                        
+                        <p><strong>Entry Requirements (ALL must be true):</strong></p>
+                        <div class="checklist">
+                            <div class="checklist-item">Price at major resistance (tested 2+ times)</div>
+                            <div class="checklist-item">RSI > 65 (preferably > 70)</div>
+                            <div class="checklist-item">Not in strong uptrend</div>
+                            <div class="checklist-item">Volume declining on approach to resistance</div>
+                            <div class="checklist-item">Bearish candlestick pattern forms (shooting star, bearish engulfing)</div>
+                        </div>
+                        
+                        <p><strong>Execution:</strong></p>
+                        <div class="formula">
+Entry: $2,100 (at resistance rejection)
+Stop-Loss: $2,130 (1.4% above, beyond resistance)
+Take-Profit 1: $2,040 (2.9%) - Exit 50%
+Take-Profit 2: $1,980 (5.7%) - Exit 50%
+
+Risk: $30 per ETH
+Reward: $60-120 per ETH
+Risk-Reward: 1:2 to 1:4 ✅
+                        </div>
+                    </div>
+                    
+                    <div class="example-box">
+                        <strong>📊 Real Example:</strong><br>
+                        ETH tested $2,100 on Jan 5, 8, 12 (rejected each time).<br>
+                        Jan 15: Price approaches $2,098, RSI hits 72.<br>
+                        Shooting star forms with wick to $2,103, closes $2,096.<br>
+                        <br>
+                        <strong>Action:</strong> Enter short at $2,095<br>
+                        <strong>Stop:</strong> $2,125<br>
+                        <strong>Result:</strong> TP1 hit at $2,030 (18hrs), TP2 at $1,965 (3 days)<br>
+                        <strong>Profit:</strong> 4.9R (4.9× risk amount)
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Strategy #2: Breakdown Momentum</h3>
+                    <span class="step-emoji">⚡</span>
+                </div>
+                <div class="step-content">
+                    <div class="strategy-box">
+                        <h4>🎯 Breakdown Rules</h4>
+                        
+                        <p><strong>Setup:</strong></p>
+                        <ul>
+                            <li>Clear support level (bounced 2+ times)</li>
+                            <li>Consolidation near support (coiling)</li>
+                            <li>Volume declining (preparing for breakout)</li>
+                        </ul>
+                        
+                        <p><strong>Trigger:</strong></p>
+                        <ul>
+                            <li>Price breaks support with HIGH volume (2x average min)</li>
+                            <li>Breakdown candle closes 0.5%+ below support</li>
+                            <li>No immediate bounce back</li>
+                        </ul>
+                        
+                        <div class="formula">
+Support at $1,950
+Breakdown candle closes $1,940
+
+Entry: $1,940
+Stop: $1,958 (above broken support)
+Target 1: $1,890 (next support)
+Target 2: $1,840 (major support)
+
+Risk: $18 | Reward: $50-100 = 2.8-5.5R
+                        </div>
+                    </div>
+                    
+                    <div class="tip-box">
+                        <strong>✅ Pro Technique: Retest Entry</strong><br>
+                        Often price breaks down, retests broken support from below, then continues.<br>
+                        Wait for retest = Better entry with tighter stop (safer but requires patience).
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Strategy #3: RSI Divergence</h3>
+                    <span class="step-emoji">📐</span>
+                </div>
+                <div class="step-content">
+                    <p><strong>Bearish Divergence = Warning Sign</strong></p>
+                    <p>Price makes HIGHER HIGH, but RSI makes LOWER HIGH = Momentum weakening</p>
+                    
+                    <div class="example-box">
+                        <strong>📊 Step-by-Step:</strong><br>
+                        Day 1: ETH hits $2,150, RSI = 78<br>
+                        Day 3: ETH pulls back to $2,100<br>
+                        Day 5: ETH rallies to $2,180 (NEW high), but RSI only = 71<br>
+                        <br>
+                        <strong>Analysis:</strong> Bearish divergence detected!<br>
+                        <strong>Action:</strong> Wait for price to break below $2,100 (low between peaks)<br>
+                        <strong>Entry:</strong> $2,095 on breakdown<br>
+                        <strong>Stop:</strong> $2,190<br>
+                        <strong>Target:</strong> $1,950
+                    </div>
+                    
+                    <div class="risk-note">
+                        <strong>⚠️ Divergence Alone is NOT Enough:</strong><br>
+                        Always wait for price confirmation (breakdown, bearish pattern).<br>
+                        Works best when divergence appears AT major resistance.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-divider">⚙️ EXECUTION & RISK MANAGEMENT</div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">5</div>
+                    <h3 class="step-title">Position Sizing Formula</h3>
+                    <span class="step-emoji">💰</span>
+                </div>
+                <div class="step-content">
+                    <div class="strategy-box">
+                        <h4>🎯 The 1-2-6 Risk Management System</h4>
+                        
+                        <p><strong>1% Rule:</strong> Risk only 1-2% per trade</p>
+                        <p><strong>2:1 Rule:</strong> Minimum risk-reward ratio of 2:1</p>
+                        <p><strong>6% Rule:</strong> Stop trading if you lose 6% in one week</p>
+                    </div>
+                    
+                    <div class="formula">
+POSITION SIZING FORMULA:
+
+Account: $1,000
+Risk Per Trade: 2% = $20
+Entry: $2,000
+Stop-Loss: $2,040
+Distance: $40 per ETH (2%)
+
+Position Size = Risk $ / Stop Distance $
+Position Size = $20 / $40 = 0.5 ETH
+
+With 5x Leverage:
+Open position = 2.5 ETH ($5,000 notional)
+Margin used = $1,000 (20% of account)
+Actual risk = Still only $20 (stop controls this)
+                    </div>
+                    
+                    <table>
+                        <tr>
+                            <th>Experience</th>
+                            <th>Max Leverage</th>
+                            <th>Risk Per Trade</th>
+                        </tr>
+                        <tr>
+                            <td>Beginner (0-6mo)</td>
+                            <td>2x - 3x</td>
+                            <td>1%</td>
+                        </tr>
+                        <tr>
+                            <td>Intermediate (6-18mo)</td>
+                            <td>3x - 5x</td>
+                            <td>1-2%</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced (18mo+)</td>
+                            <td>5x - 10x</td>
+                            <td>2%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">6</div>
+                    <h3 class="step-title">Pre-Trade Execution Checklist</h3>
+                    <span class="step-emoji">✅</span>
+                </div>
+                <div class="step-content">
+                    <div class="checklist">
+                        <div class="checklist-item">Strategy matches current setup perfectly</div>
+                        <div class="checklist-item">Risk-reward minimum 1:2 (prefer 1:3+)</div>
+                        <div class="checklist-item">Position size calculated (risk only 1-2%)</div>
+                        <div class="checklist-item">Stop-loss predetermined and logical</div>
+                        <div class="checklist-item">Take-profit levels identified</div>
+                        <div class="checklist-item">No major news in next 4 hours</div>
+                        <div class="checklist-item">BTC not in strong opposite trend</div>
+                        <div class="checklist-item">Mental state: calm and focused</div>
+                        <div class="checklist-item">Not revenge trading after loss</div>
+                        <div class="checklist-item">Not overconfident after wins</div>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <strong>💡 The 3-Strike Rule:</strong><br>
+                        • Strike 1: First loss today - normal, continue<br>
+                        • Strike 2: Second loss - take 30min break, review<br>
+                        • Strike 3: Third loss - STOP for the day<br>
+                        <br>
+                        Something is off if you lose 3 trades in one day.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">7</div>
+                    <h3 class="step-title">Trade Management After Entry</h3>
+                    <span class="step-emoji">🎯</span>
+                </div>
+                <div class="step-content">
+                    <table>
+                        <tr>
+                            <th>Scenario</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Price moving toward TP1</td>
+                            <td>Hold. Monitor every 4-6hrs.</td>
+                        </tr>
+                        <tr>
+                            <td>TP1 reached</td>
+                            <td>Close 50%. Move stop to break-even.</td>
+                        </tr>
+                        <tr>
+                            <td>Between TP1 and TP2</td>
+                            <td>Trail stop (move down as price drops).</td>
+                        </tr>
+                        <tr>
+                            <td>TP2 reached</td>
+                            <td>Close all. Journal trade. Take break.</td>
+                        </tr>
+                        <tr>
+                            <td>Price moving against you</td>
+                            <td>Trust stop-loss. DO NOT move it.</td>
+                        </tr>
+                        <tr>
+                            <td>Stop-loss hit</td>
+                            <td>Accept loss. Journal. Wait for next setup.</td>
+                        </tr>
+                    </table>
+                    
+                    <div class="tip-box">
+                        <strong>✅ Trailing Stop Technique:</strong><br>
+                        After TP1 hit and stop at break-even:<br>
+                        • Price drops $50 → Move stop down $25<br>
+                        • Locks in 50% of unrealized gains<br>
+                        • Gives trade room to breathe
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-divider">🧠 TRADING PSYCHOLOGY</div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">8</div>
+                    <h3 class="step-title">Master Your Emotions</h3>
+                    <span class="step-emoji">🎭</span>
+                </div>
+                <div class="step-content">
+                    <div class="risk-note">
+                        <strong>⚠️ The 4 Deadly Emotional Traps:</strong>
+                        
+                        <p><strong>1. FOMO (Fear of Missing Out)</strong></p>
+                        <ul>
+                            <li>Cure: If you feel urgent, wait 15min. Set alerts instead of watching.</li>
+                        </ul>
+                        
+                        <p><strong>2. Revenge Trading</strong></p>
+                        <ul>
+                            <li>Cure: Mandatory 30min break after ANY loss. Never trade angry.</li>
+                        </ul>
+                        
+                        <p><strong>3. Overconfidence After Wins</strong></p>
+                        <ul>
+                            <li>Cure: Keep position size CONSTANT. Track stats, not feelings.</li>
+                        </ul>
+                        
+                        <p><strong>4. Analysis Paralysis</strong></p>
+                        <ul>
+                            <li>Cure: Max 2-3 indicators. If setup meets checklist, TAKE IT.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="strategy-box">
+                        <h4>🎯 7 Beliefs of Winners</h4>
+                        <ol>
+                            <li>"I am a RISK MANAGER, not profit chaser"</li>
+                            <li>"Losses are part of the game" (Even best win only 50-65%)</li>
+                            <li>"I trade PROBABILITIES, not certainties"</li>
+                            <li>"PROCESS over outcome" (Good trade that loses is still good)</li>
+                            <li>"PATIENCE is my edge"</li>
+                            <li>"The market owes me NOTHING"</li>
+                            <li>"I control only my ACTIONS"</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">9</div>
+                    <h3 class="step-title">Trading Journal Template</h3>
+                    <span class="step-emoji">📔</span>
+                </div>
+                <div class="step-content">
+                    <div class="highlight-box">
+                        <strong>💡 For EVERY Trade Record:</strong>
+                        <ul>
+                            <li>Date & Time</li>
+                            <li>Asset & Direction (ETHUSDT Short)</li>
+                            <li>Entry, Stop, Targets</li>
+                            <li>Position Size & Leverage</li>
+                            <li>Risk Amount ($ and %)</li>
+                            <li>Strategy Used</li>
+                            <li>Setup Quality (1-10)</li>
+                            <li>Emotional State (Calm/Anxious/Excited)</li>
+                            <li>Screenshot of chart</li>
+                            <li>Result (Win/Loss, R multiple)</li>
+                            <li>What Went Right</li>
+                            <li>What Went Wrong</li>
+                            <li>Lesson Learned</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>Review journal every Sunday. Look for patterns.</strong></p>
+                </div>
+            </div>
+            
+            <div class="section-divider">🚀 ADVANCED TECHNIQUES</div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">10</div>
+                    <h3 class="step-title">Multi-Timeframe Analysis</h3>
+                    <span class="step-emoji">⏰</span>
+                </div>
+                <div class="step-content">
+                    <div class="strategy-box">
+                        <h4>🎯 Top-Down 3-Timeframe Method</h4>
+                        
+                        <p><strong>1. Daily Chart - Trend (Big Picture)</strong></p>
+                        <ul>
+                            <li>Is trend up, down, or sideways?</li>
+                            <li>Major support/resistance levels?</li>
+                            <li>Market overextended?</li>
+                        </ul>
+                        
+                        <p><strong>2. 4H Chart - Setup Location</strong></p>
+                        <ul>
+                            <li>Where in daily structure?</li>
+                            <li>Pullback or continuation?</li>
+                            <li>Near good entry zone?</li>
+                        </ul>
+                        
+                        <p><strong>3. 1H Chart - Precise Entry</strong></p>
+                        <ul>
+                            <li>Wait for entry trigger</li>
+                            <li>Candlestick patterns</li>
+                            <li>Place stop based on 1H</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="formula">
+ALIGNMENT CHECK:
+
+Daily: DOWNTREND ✅
+4H: At resistance in pullback ✅
+1H: Bearish pattern ✅
+= HIGH PROBABILITY ✅
+
+vs.
+
+Daily: UPTREND ❌
+4H: At support ❌
+1H: Bearish pattern ⚠️
+= LOW PROBABILITY (SKIP) ❌
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">11</div>
+                    <h3 class="step-title">Indicators Deep Dive</h3>
+                    <span class="step-emoji">📊</span>
+                </div>
+                <div class="step-content">
+                    <div class="strategy-box">
+                        <h4>🎯 3-Indicator Power System</h4>
+                        
+                        <p><strong>RSI (14 period):</strong></p>
+                        <ul>
+                            <li>Overbought: RSI > 70 → Look for shorts</li>
+                            <li>Entry: RSI crosses below 70</li>
+                            <li>Divergence: Price higher, RSI lower = bearish</li>
+                        </ul>
+                        
+                        <p><strong>MACD:</strong></p>
+                        <ul>
+                            <li>Bearish cross: MACD below signal line</li>
+                            <li>Red histogram growing = momentum down</li>
+                            <li>Below zero line = stronger bearish</li>
+                        </ul>
+                        
+                        <p><strong>EMA 50 & 200:</strong></p>
+                        <ul>
+                            <li>Death Cross: 50 below 200 = major bearish</li>
+                            <li>Price below both = downtrend confirmed</li>
+                            <li>EMAs act as resistance</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>Fibonacci Retracements:</strong></p>
+                    <div class="formula">
+ETH dropped from $2,200 to $1,800
+Draw Fib from high to low
+
+Short Entry Zones:
+38.2% = $1,953 (aggressive)
+50.0% = $2,000 (moderate)
+61.8% = $2,047 (conservative - golden ratio)
+
+Wait for rejection at these levels
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">12</div>
+                    <h3 class="step-title">News & Event Management</h3>
+                    <span class="step-emoji">📰</span>
+                </div>
+                <div class="step-content">
+                    <table>
+                        <tr>
+                            <th>Event</th>
+                            <th>Impact</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Fed Rate Decision</td>
+                            <td>Extreme</td>
+                            <td>Close all or reduce to 25%</td>
+                        </tr>
+                        <tr>
+                            <td>CPI/Inflation Data</td>
+                            <td>Very High</td>
+                            <td>Close leveraged positions</td>
+                        </tr>
+                        <tr>
+                            <td>Non-Farm Payrolls</td>
+                            <td>High</td>
+                            <td>Widen stops or close</td>
+                        </tr>
+                        <tr>
+                            <td>SEC Announcements</td>
+                            <td>High</td>
+                            <td>Monitor closely</td>
+                        </tr>
+                    </table>
+                    
+                    <div class="risk-note">
+                        <strong>⚠️ NEVER Hold Leveraged Positions Through Major News</strong><br>
+                        • Price can gap past your stop<br>
+                        • Volatility triggers stops even if direction correct<br>
+                        • Liquidation risk spikes<br>
+                        <br>
+                        <strong>Close before news, re-enter after 1-2 hours</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">13</div>
+                    <h3 class="step-title">Backtesting Your Strategy</h3>
+                    <span class="step-emoji">🔬</span>
+                </div>
+                <div class="step-content">
+                    <div class="checklist">
+                        <div class="checklist-item">Write down EXACT strategy rules</div>
+                        <div class="checklist-item">Select 6-12 months historical data</div>
+                        <div class="checklist-item">Go through charts bar by bar (replay mode)</div>
+                        <div class="checklist-item">Mark every setup that meets criteria</div>
+                        <div class="checklist-item">Record: entry, stop, target, result</div>
+                        <div class="checklist-item">Track minimum 30 trades (prefer 50+)</div>
+                        <div class="checklist-item">Calculate: win rate, avg R, expectancy</div>
+                    </div>
+                    
+                    <div class="formula">
+BACKTEST RESULTS ANALYSIS:
+
+Wins: 28 / Total: 50 = 56% win rate
+Avg Win: 2.3R | Avg Loss: 1.0R
+
+Expectancy = (Win% × Avg Win) - (Loss% × Avg Loss)
+           = (0.56 × 2.3R) - (0.44 × 1.0R)
+           = 1.29R - 0.44R
+           = 0.85R per trade ✅
+
+Positive expectancy = PROFITABLE STRATEGY
+                    </div>
+                    
+                    <table>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Minimum</th>
+                            <th>Good</th>
+                            <th>Excellent</th>
+                        </tr>
+                        <tr>
+                            <td>Win Rate</td>
+                            <td>40%</td>
+                            <td>50-60%</td>
+                            <td>65%+</td>
+                        </tr>
+                        <tr>
+                            <td>Avg R</td>
+                            <td>1.5R</td>
+                            <td>2.0R</td>
+                            <td>3.0R+</td>
+                        </tr>
+                        <tr>
+                            <td>Expectancy</td>
+                            <td>0.3R+</td>
+                            <td>0.5R+</td>
+                            <td>1.0R+</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="section-divider">📈 PATH TO SUCCESS</div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">14</div>
+                    <h3 class="step-title">Progression Roadmap</h3>
+                    <span class="step-emoji">🎓</span>
+                </div>
+                <div class="step-content">
+                    <div class="strategy-box">
+                        <h4>🎯 6-Month Path to Profitability</h4>
+                        
+                        <p><strong>Month 1-2: Education</strong></p>
+                        <ul>
+                            <li>Study this guide completely</li>
+                            <li>Watch chart replays, identify setups</li>
+                            <li>No trading yet - pure learning</li>
+                        </ul>
+                        
+                        <p><strong>Month 3-4: Paper Trading</strong></p>
+                        <ul>
+                            <li>Demo account - treat it like real money</li>
+                            <li>Take 50+ trades following exact rules</li>
+                            <li>Journal every single trade</li>
+                            <li>Must be profitable before advancing</li>
+                        </ul>
+                        
+                        <p><strong>Month 5-6: Small Real Money</strong></p>
+                        <ul>
+                            <li>Start with $100-200 only</li>
+                            <li>2x-3x leverage maximum</li>
+                            <li>Same strategies from paper trading</li>
+                            <li>Focus on following process, not P&L</li>
+                        </ul>
+                        
+                        <p><strong>Month 7+: Gradual Scaling</strong></p>
+                        <ul>
+                            <li>If profitable 3 months straight, add capital slowly</li>
+                            <li>Increase position size by 25% per month max</li>
+                            <li>Never increase after wins - only after consistent results</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="risk-note">
+                        <strong>⚠️ Reality Check:</strong><br>
+                        Most traders who skip paper trading blow their first account within 2 months.<br>
+                        Those who practice 3-6 months first have 5-10x better survival rate.<br>
+                        <br>
+                        <strong>Patience in learning = Profits in trading</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">15</div>
+                    <h3 class="step-title">Final Checklist for Success</h3>
+                    <span class="step-emoji">✨</span>
+                </div>
+                <div class="step-content">
+                    <div class="highlight-box">
+                        <strong>💡 Before You Start Trading:</strong>
+                        
+                        <div class="checklist">
+                            <div class="checklist-item">Completed 50+ paper trades (win or lose)</div>
+                            <div class="checklist-item">Have written trading plan document</div>
+                            <div class="checklist-item">Positive expectancy in backtesting</div>
+                            <div class="checklist-item">Understand position sizing formula</div>
+                            <div class="checklist-item">Can identify all 3 strategies flawlessly</div>
+                            <div class="checklist-item">Know when NOT to trade</div>
+                            <div class="checklist-item">Have trading journal template ready</div>
+                            <div class="checklist-item">Emergency fund separate from trading capital</div>
+                            <div class="checklist-item">Discussed risks with family/advisor</div>
+                            <div class="checklist-item">Verified local regulations (Philippines: BSP/SEC)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="tip-box">
+                        <strong>✅ Daily Routine Checklist:</strong><br><br>
+                        <strong>Morning (8:00-9:30 AM):</strong><br>
+                        • Review overnight action<br>
+                        • Check BTC trend<br>
+                        • Economic calendar<br>
+                        • Mark S/R levels<br>
+                        • Identify 1-3 setups<br>
+                        • Mental state check<br><br>
+                        
+                        <strong>During Market:</strong><br>
+                        • Monitor setups (not 1-min charts!)<br>
+                        • Take trades only when ALL criteria met<br>
+                        • Journal immediately after entry<br><br>
+                        
+                        <strong>Evening:</strong><br>
+                        • Review all trades<br>
+                        • Update journal<br>
+                        • Plan for tomorrow<br>
+                        • NO revenge trading at night
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">16</div>
+                    <h3 class="step-title">Compliance & Safety</h3>
+                    <span class="step-emoji">🔒</span>
+                </div>
+                <div class="step-content">
+                    <p><strong>Security Best Practices:</strong></p>
+                    <ul>
+                        <li>2FA with authenticator app (NOT SMS)</li>
+                        <li>Unique 20+ character password</li>
+                        <li>Whitelist withdrawal addresses</li>
+                        <li>Never access on public WiFi without VPN</li>
+                        <li>Hardware wallet for large holdings</li>
+                    </ul>
+                    
+                    <div class="example-box">
+                        <strong>📊 Philippines Regulatory Example:</strong><br>
+                        • Check BSP (Bangko Sentral ng Pilipinas) regulations<br>
+                        • Verify exchange registration with SEC<br>
+                        • Understand tax obligations with BIR<br>
+                        • Keep records for potential audits<br>
+                        • Consult local legal/tax advisor
+                    </div>
+                    
+                    <div class="risk-note">
+                        <strong>⚠️ Red Flags - AVOID:</strong>
+                        <ul>
+                            <li>Guaranteed returns promises</li>
+                            <li>Pressure to invest quickly</li>
+                            <li>Requests for private keys/passwords</li>
+                            <li>Pump-and-dump groups</li>
+                            <li>Unrealistic win rate claims (90%+)</li>
+                            <li>"Recovery services" with upfront fees</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <footer>
+            <p class="footer-warning">⚠️ EDUCATIONAL USE ONLY - SUBSTANTIAL RISK WARNING ⚠️</p>
+            <p>This guide is for educational purposes ONLY and does NOT constitute financial, investment, legal, or tax advice.</p>
+            <p>Leveraged futures trading can result in losing your ENTIRE investment or more. 70-80% of retail traders lose money.</p>
+            <p>Always conduct your own research. Consult qualified professionals before making financial decisions.</p>
+            <p>Check local regulations (Philippines: verify compliance with BSP/SEC before trading).</p>
+            <p style="margin-top: 15px; opacity: 0.8;">Past performance does not guarantee future results. Trading involves substantial risk.</p>
+            <p style="margin-top: 10px; font-size: 0.85rem; opacity: 0.7;">© 2026 Educational Trading Guide - Not affiliated with any exchange or trading platform</p>
+        </footer>
+    </div>
+</body>
+</html>
